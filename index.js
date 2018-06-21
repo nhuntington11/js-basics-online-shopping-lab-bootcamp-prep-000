@@ -25,8 +25,9 @@ function viewCart() {
     cartList += `${cart[i].itemName} at $${cart[i].itemPrice}`
     if (cart[i + 1] != undefined) {
       cartList += `, and `
-    } else {
-      cartList += `.`
+    } else if (cart[i] + 1 === undefined) {
+        cartList += `.`
+      }
     }
     return cartList
   }
