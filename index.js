@@ -14,7 +14,7 @@ function addToCart(item) {
   return `${item} has been added to your cart.`
 }
 
-addToCard('banana')
+addToCart('banana')
 console.log(cart)
 
 function viewCart() {
