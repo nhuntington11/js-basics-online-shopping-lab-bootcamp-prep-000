@@ -21,8 +21,8 @@ function viewCart() {
 
   var cartList = `In your cart, you have `
 
-  for (var i = 0; cart.length != undefined; i++) {
-    cartList += `${cart[0]
+  for (var i = 0; cart[i] != undefined; i++) {
+    cartList += `${cart[i].itemName} at $${cart[i].itemPrice}.`
   }
 }
 
