@@ -23,6 +23,7 @@ function viewCart() {
 
   for (var i = 0; cart[i] != undefined; i++) {
     cartList += `${cart[i].itemName} at $${cart[i].itemPrice}.`
+    return cartList
   }
 }
 
