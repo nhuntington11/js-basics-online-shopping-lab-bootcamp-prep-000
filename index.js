@@ -29,6 +29,8 @@ function viewCart() {
       } else if (cart[i + 1] != undefined) {
         if (cart[i + 2] === undefined) {
           cartList += `, and `
+        } else {
+          cartList += `, `
         }
       }
   }
