@@ -21,8 +21,8 @@ function viewCart() {
 
   var cartList = `In your cart, you have `
 
-  for (var i = cart.length; i > 0; i--) {
-    cartList += 
+  for (var i = 0; cart.length != undefined; i++) {
+    cartList += `${cart[0]
   }
 }
 
