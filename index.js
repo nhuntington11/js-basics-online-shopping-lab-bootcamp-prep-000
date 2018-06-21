@@ -28,7 +28,6 @@ function viewCart() {
         return cartList
       }
   }
-  return cartList
 }
 
 function total() {
