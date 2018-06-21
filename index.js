@@ -14,12 +14,15 @@ function addToCart(item) {
   return `${item} has been added to your cart.`
 }
 
-addToCart('banana')
-console.log(cart)
-
 function viewCart() {
   if (cart.length === 0) {
     return 'Your shopping cart is empty.'
+  }
+
+  var cartList = `In your cart, you have `
+
+  for (var i = cart.length; i > 0; i--) {
+    cartList += 
   }
 }
 
