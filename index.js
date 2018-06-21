@@ -26,7 +26,8 @@ function viewCart() {
       cartList += `${cart[i].itemName} at $${cart[i].itemPrice}.`
       return cartList
     } else if (cartLength === 2)
-      cartList += 
+      cartList += ''
+    }
   }
   return cartList
 }
