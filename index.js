@@ -26,7 +26,7 @@ function viewCart() {
     if (cart[i + 1] === undefined) {
       cartList += `.`
     } else {
-      cartList += `.`
+      cartList += `, and `
     }
     return cartList
   }
