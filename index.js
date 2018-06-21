@@ -27,7 +27,9 @@ function viewCart() {
         cartList += `.`
         return cartList
       } else if (cart[i + 1] != undefined) {
-        cartList += `, and `
+        if (cart[i + 2] === undefined) {
+          cartList += `, and `
+        }
       }
   }
 }
