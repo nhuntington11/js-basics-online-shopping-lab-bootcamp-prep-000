@@ -22,11 +22,8 @@ function viewCart() {
   var cartList = `In your cart, you have `
 
   for (var i = 0; cart[i] != undefined; i++) {
-    cartList += `${cart[i].itemName} at $${cart[i].itemPrice}`
-    if (cart[i + 1] === undefined) {
-      cartList += '.'
-    } else if (cart.length === 2) {
-      cart
+    if (cart.length === 1) {
+      cartList += `${cart[i].itemName} at $${cart[i].itemPrice}.`
     }
   }
   return cartList
