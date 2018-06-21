@@ -23,11 +23,10 @@ function viewCart() {
 
   for (var i = 0; cart[i] != undefined; i++) {
     cartList += `${cart[i].itemName} at $${cart[i].itemPrice}`
-    if (cart[i + 1] != undefined) {
+    if (cart[i + 1] === undefined) {
       cartList += `, and `
-    } else { if (cart[i + 1] === undefined) {
+    } else {
       cartList += `.`
-    }
     }
     return cartList
   }
