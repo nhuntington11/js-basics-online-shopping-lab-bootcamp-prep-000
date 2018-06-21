@@ -46,6 +46,10 @@ function total() {
 }
 
 function removeFromCart(item) {
+  if (cart.length === 0) {
+    return 'That item is not in your cart.'
+  }
+  
   for (var i = 0; cart[i] != undefined; i++) {
     if (item === cart[i].itemName) {
       delete cart[i]
